@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change_money</title>
+    <script>
+        function Hienthi() {
+            let change=document.getElementById('money').value;
+            let d=document.getElementById('choose').value;
+            let c=document.getElementById('current').value;
+            let Amount=(change*c)/d;
+            alert('Amount= '+Amount);
+        }
+    </script>
+</head>
+<body>
+<form name="this_form">
+Amount:<input name="amount" id="money">
+
+  Choose:  <select id="choose" >
+    <option value="23000">VietNam</option>
+    <option value="15000">Japan</option>
+    <option value="1">USA</option>
+    </select>
+
+
+    Current:<select id="current">
+    <option value="1" >USA</option>
+    <option value="23000">VietNam</option>
+    <option value="15000">Japan</option>
+    </select>
+    <br/>
+    <button type="button" onclick="Hienthi()">Convert
+
+</button>
+
+</form>
+</body>
+</html>
